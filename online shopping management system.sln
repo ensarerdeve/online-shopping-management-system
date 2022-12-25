@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "online shopping management system", "online shopping management system\online shopping management system.csproj", "{FCB1972F-C142-4082-8BCB-9FCB809FF205}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Online Shopping Management Sys", "Online Shopping Management Sys\Online Shopping Management Sys.vdproj", "{9187F4BF-6E21-41B9-BD64-E1EEBB68A1F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCB1972F-C142-4082-8BCB-9FCB809FF205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB1972F-C142-4082-8BCB-9FCB809FF205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB1972F-C142-4082-8BCB-9FCB809FF205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB1972F-C142-4082-8BCB-9FCB809FF205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9187F4BF-6E21-41B9-BD64-E1EEBB68A1F6}.Debug|Any CPU.ActiveCfg = Debug
+		{9187F4BF-6E21-41B9-BD64-E1EEBB68A1F6}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {323AA344-541D-42BF-BCB4-207CBA510A32}
+	EndGlobalSection
+EndGlobal

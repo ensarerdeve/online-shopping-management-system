@@ -1,0 +1,51 @@
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\bin\Debug\online shopping management system.exe.config
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\bin\Debug\online shopping management system.exe
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\bin\Debug\online shopping management system.pdb
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\bin\Debug\Guna.UI2.dll
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Properties.Resources.resources
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online shopping management system.csproj.GenerateResource.cache
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online shopping management system.csproj.CoreCompileInputs.cache
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online shopping management system.csproj.CopyComplete
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online shopping management system.exe
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online shopping management system.pdb
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Customers.resources
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Login.resources
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Shippment.resources
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Product.resources
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Receipts.resources
+C:\Users\ENSAR\source\repos\online shopping management system\online shopping management system\obj\Debug\online shopping management system.csproj.AssemblyReference.cache
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\bin\Debug\online shopping management system.exe.config
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\bin\Debug\online shopping management system.exe
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\bin\Debug\online shopping management system.pdb
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\bin\Debug\Guna.UI2.dll
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online shopping management system.csproj.AssemblyReference.cache
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Customers.resources
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Login.resources
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Product.resources
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Properties.Resources.resources
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Receipts.resources
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online_shopping_management_system.Shippment.resources
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online shopping management system.csproj.GenerateResource.cache
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online shopping management system.csproj.CoreCompileInputs.cache
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online shopping management system.csproj.CopyComplete
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online shopping management system.exe
+C:\Users\ENSAR\Desktop\online shopping management system\online shopping management system\obj\Debug\online shopping management system.pdb
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\bin\Debug\online shopping management system.exe.config
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\bin\Debug\online shopping management system.exe
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\bin\Debug\online shopping management system.pdb
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\bin\Debug\EntityFramework.dll
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\bin\Debug\Guna.UI2.dll
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\bin\Debug\EntityFramework.xml
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online shopping management system.csproj.AssemblyReference.cache
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online_shopping_management_system.Customers.resources
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online_shopping_management_system.Login.resources
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online_shopping_management_system.Product.resources
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online_shopping_management_system.Properties.Resources.resources
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online shopping management system.csproj.GenerateResource.cache
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online shopping management system.csproj.CoreCompileInputs.cache
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online shopping management system.csproj.CopyComplete
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online shopping management system.exe
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online shopping management system.pdb
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online_shopping_management_system.list.resources

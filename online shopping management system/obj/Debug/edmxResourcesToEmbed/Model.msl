@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OnlineShoppingDBModelStoreContainer" CdmEntityContainer="OnlineShoppingDBEntities">
+    <EntitySetMapping Name="Product_List">
+      <EntityTypeMapping TypeName="OnlineShoppingDBModel.Product_List">
+        <MappingFragment StoreEntitySet="Product_List">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Products" ColumnName="Products" />
+          <ScalarProperty Name="Prices" ColumnName="Prices" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
