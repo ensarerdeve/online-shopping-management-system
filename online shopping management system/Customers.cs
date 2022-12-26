@@ -67,7 +67,7 @@ namespace online_shopping_management_system
             AddressTb.Text = CustomerList.SelectedRows[0].Cells[3].Value.ToString();
             DenemeTimeTb.Text = CustomerList.SelectedRows[0].Cells[4].Value.ToString();
             GenderCb.SelectedItem = CustomerList.SelectedRows[0].Cells[5].Value.ToString();
-            AgeTb.Text = CustomerList.SelectedRows[0].Cells[6].Value.ToString();
+            ProTb.Text = CustomerList.SelectedRows[0].Cells[6].Value.ToString();
             if(CustNameTb.Text == "")
             {
                 Key = 0;
@@ -87,7 +87,7 @@ namespace online_shopping_management_system
         {
             try
             {
-                if (CustNameTb.Text == "" || PhoneTb.Text == "" || AddressTb.Text == "" || AgeTb.Text == "" || GenderCb.SelectedIndex == -1)
+                if (CustNameTb.Text == "" || PhoneTb.Text == "" || AddressTb.Text == "" || ProTb.Text == "" || GenderCb.SelectedIndex == -1)
                 {
                     MessageBox.Show("Missing Data!");
                 }
@@ -96,16 +96,16 @@ namespace online_shopping_management_system
                     string Name = CustNameTb.Text;
                     string Phone = PhoneTb.Text;
                     string Address = AddressTb.Text;
-                    string Gender = GenderCb.SelectedItem.ToString();
-                    string Age = AgeTb.Text;
+                    string Amount = GenderCb.SelectedItem.ToString();
+                    string Product = ProTb.Text;
                     string Query = "insert into CustomerTbl values('{0}','{1}','{2}','{3}','{4}','{5}')";
-                    Query = string.Format(Query, Name, Phone, Address,DenemeTimeTb.Value.ToString("yyyy-MM-dd"), Gender, Age);
+                    Query = string.Format(Query, Name, Phone, Address,DenemeTimeTb.Value.ToString("yyyy-MM-dd"), Amount, Product);
                     Con.SetData(Query);
                     ShowCustomers();
                     MessageBox.Show("Customer Added!");
                     CustNameTb.Text = "";
                     PhoneTb.Text = "";
-                    AgeTb.Text = "";
+                    ProTb.Text = "";
                     AddressTb.Text = "";
                     GenderCb.SelectedIndex = -1;
                 }
@@ -135,7 +135,7 @@ namespace online_shopping_management_system
                     MessageBox.Show("Customer Deleted!");
                     CustNameTb.Text = "";
                     PhoneTb.Text = "";
-                    AgeTb.Text = "";
+                    ProTb.Text = "";
                     AddressTb.Text = "";
                     GenderCb.SelectedIndex = -1;
                 }
@@ -151,7 +151,7 @@ namespace online_shopping_management_system
         {
             try
             {
-                if (CustNameTb.Text == "" || PhoneTb.Text == "" || AddressTb.Text == "" || AgeTb.Text == "" || GenderCb.SelectedIndex == -1)
+                if (CustNameTb.Text == "" || PhoneTb.Text == "" || AddressTb.Text == "" || ProTb.Text == "" || GenderCb.SelectedIndex == -1)
                 {
                     MessageBox.Show("Missing Data!");
                 }
@@ -160,16 +160,16 @@ namespace online_shopping_management_system
                     string Name = CustNameTb.Text;
                     string Phone = PhoneTb.Text;
                     string Address = AddressTb.Text;
-                    string Gender = GenderCb.SelectedItem.ToString();
-                    string Age = AgeTb.Text;
-                    string Query = "update CustomerTbl set CustomerName = '{0}',CustomerPhone = '{1}',CustomerAddress = '{2}',CustomerBirthday = '{3}',CustomerGender = '{4}',CustomerAge = '{5}' where CustomerId = {6}";
-                    Query = string.Format(Query, Name, Phone, Address, DenemeTimeTb.Value.ToString("yyyy-MM-dd"), Gender, Age, Key);
+                    string Amount = GenderCb.SelectedItem.ToString();
+                    string Product = ProTb.Text;
+                    string Query = "update CustomerTbl set CustomerName = '{0}',CustomerPhone = '{1}',CustomerAddress = '{2}',CustomerBirthday = '{3}',CustomerGender = '{4}',CustomerProduct = '{5}' where CustomerId = {6}";
+                    Query = string.Format(Query, Name, Phone, Address, DenemeTimeTb.Value.ToString("yyyy-MM-dd"), Amount, Product, Key);
                     Con.SetData(Query);
                     ShowCustomers();
                     MessageBox.Show("Customer Updated!");
                     CustNameTb.Text = "";
                     PhoneTb.Text = "";
-                    AgeTb.Text = "";
+                    ProTb.Text = "";
                     AddressTb.Text = "";
                     GenderCb.SelectedIndex = -1;
                 }

@@ -49,3 +49,4 @@ C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping
 C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online shopping management system.exe
 C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online shopping management system.pdb
 C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online_shopping_management_system.list.resources
+C:\Users\ENSAR\Desktop\online shopping management system - Kopya\online shopping management system\obj\Debug\online_shopping_management_system.customerLISTFORM.resources

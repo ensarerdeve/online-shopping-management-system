@@ -44,23 +44,24 @@ namespace online_shopping_management_system
             this.label8 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Separator7 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator6 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.guna2Separator7 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator6 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
@@ -69,7 +70,6 @@ namespace online_shopping_management_system
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -237,6 +237,17 @@ namespace online_shopping_management_system
             this.label1.TabIndex = 17;
             this.label1.Text = "Product And Price List";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::online_shopping_management_system.Properties.Resources._439220;
+            this.pictureBox7.Location = new System.Drawing.Point(421, 8);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(62, 35);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 16;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -255,7 +266,7 @@ namespace online_shopping_management_system
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel1.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label12);
@@ -288,48 +299,6 @@ namespace online_shopping_management_system
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(483, 719);
             this.panel1.TabIndex = 1;
-            // 
-            // guna2Separator7
-            // 
-            this.guna2Separator7.Location = new System.Drawing.Point(0, 149);
-            this.guna2Separator7.Name = "guna2Separator7";
-            this.guna2Separator7.Size = new System.Drawing.Size(483, 10);
-            this.guna2Separator7.TabIndex = 23;
-            // 
-            // guna2Separator6
-            // 
-            this.guna2Separator6.Location = new System.Drawing.Point(0, 249);
-            this.guna2Separator6.Name = "guna2Separator6";
-            this.guna2Separator6.Size = new System.Drawing.Size(483, 10);
-            this.guna2Separator6.TabIndex = 22;
-            // 
-            // guna2Separator5
-            // 
-            this.guna2Separator5.Location = new System.Drawing.Point(0, 349);
-            this.guna2Separator5.Name = "guna2Separator5";
-            this.guna2Separator5.Size = new System.Drawing.Size(483, 10);
-            this.guna2Separator5.TabIndex = 21;
-            // 
-            // guna2Separator4
-            // 
-            this.guna2Separator4.Location = new System.Drawing.Point(-3, 549);
-            this.guna2Separator4.Name = "guna2Separator4";
-            this.guna2Separator4.Size = new System.Drawing.Size(486, 10);
-            this.guna2Separator4.TabIndex = 20;
-            // 
-            // guna2Separator3
-            // 
-            this.guna2Separator3.Location = new System.Drawing.Point(0, 649);
-            this.guna2Separator3.Name = "guna2Separator3";
-            this.guna2Separator3.Size = new System.Drawing.Size(483, 10);
-            this.guna2Separator3.TabIndex = 19;
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.Location = new System.Drawing.Point(0, 49);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(483, 10);
-            this.guna2Separator1.TabIndex = 17;
             // 
             // guna2PictureBox6
             // 
@@ -397,16 +366,47 @@ namespace online_shopping_management_system
             this.guna2PictureBox1.TabIndex = 26;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // pictureBox7
+            // guna2Separator7
             // 
-            this.pictureBox7.Image = global::online_shopping_management_system.Properties.Resources._439220;
-            this.pictureBox7.Location = new System.Drawing.Point(421, 8);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(62, 35);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 16;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            this.guna2Separator7.Location = new System.Drawing.Point(0, 149);
+            this.guna2Separator7.Name = "guna2Separator7";
+            this.guna2Separator7.Size = new System.Drawing.Size(483, 10);
+            this.guna2Separator7.TabIndex = 23;
+            // 
+            // guna2Separator6
+            // 
+            this.guna2Separator6.Location = new System.Drawing.Point(0, 249);
+            this.guna2Separator6.Name = "guna2Separator6";
+            this.guna2Separator6.Size = new System.Drawing.Size(483, 10);
+            this.guna2Separator6.TabIndex = 22;
+            // 
+            // guna2Separator5
+            // 
+            this.guna2Separator5.Location = new System.Drawing.Point(0, 349);
+            this.guna2Separator5.Name = "guna2Separator5";
+            this.guna2Separator5.Size = new System.Drawing.Size(483, 10);
+            this.guna2Separator5.TabIndex = 21;
+            // 
+            // guna2Separator4
+            // 
+            this.guna2Separator4.Location = new System.Drawing.Point(-3, 549);
+            this.guna2Separator4.Name = "guna2Separator4";
+            this.guna2Separator4.Size = new System.Drawing.Size(486, 10);
+            this.guna2Separator4.TabIndex = 20;
+            // 
+            // guna2Separator3
+            // 
+            this.guna2Separator3.Location = new System.Drawing.Point(0, 649);
+            this.guna2Separator3.Name = "guna2Separator3";
+            this.guna2Separator3.Size = new System.Drawing.Size(483, 10);
+            this.guna2Separator3.TabIndex = 19;
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Location = new System.Drawing.Point(0, 49);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(483, 10);
+            this.guna2Separator1.TabIndex = 17;
             // 
             // list
             // 
@@ -420,6 +420,7 @@ namespace online_shopping_management_system
             this.Text = "list";
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -430,7 +431,6 @@ namespace online_shopping_management_system
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }

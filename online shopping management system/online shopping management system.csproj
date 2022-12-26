@@ -58,11 +58,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="customerlist.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>customerlist.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="customerlist.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>customerlist.tt</DependentUpon>
+    </Compile>
+    <Compile Include="customerlist.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>customerlist.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="customerLISTFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerLISTFORM.Designer.cs">
+      <DependentUpon>customerLISTFORM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTbl.cs">
+      <DependentUpon>customerlist.tt</DependentUpon>
     </Compile>
     <Compile Include="Functions.cs" />
     <Compile Include="list.cs">
@@ -92,6 +116,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="OnlineShoppingDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnlineShoppingDBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Products.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +132,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="customerLISTFORM.resx">
+      <DependentUpon>customerLISTFORM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,8 +161,26 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="customerlist.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>customerlist.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="customerlist.edmx.diagram">
+      <DependentUpon>customerlist.edmx</DependentUpon>
+    </None>
     <None Include="Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
+    </None>
+    <None Include="OnlineShoppingDBDataSet2.xsc">
+      <DependentUpon>OnlineShoppingDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OnlineShoppingDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnlineShoppingDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnlineShoppingDBDataSet2.xss">
+      <DependentUpon>OnlineShoppingDBDataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -168,6 +218,16 @@
     <None Include="Resources\30899671.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="customerlist.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>customerlist.edmx</DependentUpon>
+      <LastGenOutput>customerlist.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="customerlist.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>customerlist.edmx</DependentUpon>
+      <LastGenOutput>customerlist.cs</LastGenOutput>
+    </Content>
     <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model.Context.cs</LastGenOutput>

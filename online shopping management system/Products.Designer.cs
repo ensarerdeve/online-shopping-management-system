@@ -30,9 +30,9 @@ namespace online_shopping_management_system
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ProductCB = new System.Windows.Forms.ComboBox();
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.button3 = new System.Windows.Forms.Button();
@@ -53,10 +53,14 @@ namespace online_shopping_management_system
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.namebox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.protext = new System.Windows.Forms.TextBox();
             this.pricelabel = new System.Windows.Forms.Label();
@@ -72,6 +76,10 @@ namespace online_shopping_management_system
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.onlineShoppingDBDataSet = new online_shopping_management_system.OnlineShoppingDBDataSet();
+            this.onlineShoppingDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.customerTblBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.customerTblTableAdapter = new online_shopping_management_system.OnlineShoppingDBDataSetTableAdapters.CustomerTblTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -84,6 +92,9 @@ namespace online_shopping_management_system
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlineShoppingDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlineShoppingDBDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerTblBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // ProductCB
@@ -298,12 +309,39 @@ namespace online_shopping_management_system
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(334, 61);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1041, 678);
             this.panel2.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(299, 253);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(110, 21);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Customer List";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(415, 249);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(173, 29);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "List";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel4
             // 
@@ -327,26 +365,26 @@ namespace online_shopping_management_system
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 25;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(28, 54);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -379,6 +417,8 @@ namespace online_shopping_management_system
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.namebox);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.protext);
             this.panel3.Controls.Add(this.pricelabel);
@@ -399,6 +439,23 @@ namespace online_shopping_management_system
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(963, 221);
             this.panel3.TabIndex = 0;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(123, 84);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(107, 17);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "Customer Name";
+            // 
+            // namebox
+            // 
+            this.namebox.Location = new System.Drawing.Point(77, 104);
+            this.namebox.Name = "namebox";
+            this.namebox.Size = new System.Drawing.Size(200, 29);
+            this.namebox.TabIndex = 28;
             // 
             // label6
             // 
@@ -453,9 +510,9 @@ namespace online_shopping_management_system
             this.DenemeTimeTb.CustomFormat = "";
             this.DenemeTimeTb.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.DenemeTimeTb.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DenemeTimeTb.Location = new System.Drawing.Point(93, 47);
+            this.DenemeTimeTb.Location = new System.Drawing.Point(77, 47);
             this.DenemeTimeTb.Name = "DenemeTimeTb";
-            this.DenemeTimeTb.Size = new System.Drawing.Size(126, 22);
+            this.DenemeTimeTb.Size = new System.Drawing.Size(189, 22);
             this.DenemeTimeTb.TabIndex = 22;
             // 
             // AmountTb
@@ -467,7 +524,7 @@ namespace online_shopping_management_system
             // 
             // CostTb
             // 
-            this.CostTb.Location = new System.Drawing.Point(656, 92);
+            this.CostTb.Location = new System.Drawing.Point(656, 98);
             this.CostTb.Name = "CostTb";
             this.CostTb.Size = new System.Drawing.Size(200, 29);
             this.CostTb.TabIndex = 20;
@@ -476,7 +533,7 @@ namespace online_shopping_management_system
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(604, 98);
+            this.label4.Location = new System.Drawing.Point(604, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 17);
             this.label4.TabIndex = 19;
@@ -508,9 +565,9 @@ namespace online_shopping_management_system
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(90, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 17);
+            this.label1.Size = new System.Drawing.Size(99, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Purchase Time";
+            this.label1.Text = "Shipment Time";
             // 
             // guna2Elipse5
             // 
@@ -526,6 +583,25 @@ namespace online_shopping_management_system
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // onlineShoppingDBDataSet
+            // 
+            this.onlineShoppingDBDataSet.DataSetName = "OnlineShoppingDBDataSet";
+            this.onlineShoppingDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // onlineShoppingDBDataSetBindingSource
+            // 
+            this.onlineShoppingDBDataSetBindingSource.DataSource = this.onlineShoppingDBDataSet;
+            this.onlineShoppingDBDataSetBindingSource.Position = 0;
+            // 
+            // customerTblBindingSource
+            // 
+            this.customerTblBindingSource.DataMember = "CustomerTbl";
+            this.customerTblBindingSource.DataSource = this.onlineShoppingDBDataSet;
+            // 
+            // customerTblTableAdapter
+            // 
+            this.customerTblTableAdapter.ClearBeforeFill = true;
             // 
             // Product
             // 
@@ -549,12 +625,16 @@ namespace online_shopping_management_system
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlineShoppingDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlineShoppingDBDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerTblBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -600,5 +680,13 @@ namespace online_shopping_management_system
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox protext;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.BindingSource onlineShoppingDBDataSetBindingSource;
+        private OnlineShoppingDBDataSet onlineShoppingDBDataSet;
+        private System.Windows.Forms.BindingSource customerTblBindingSource;
+        private OnlineShoppingDBDataSetTableAdapters.CustomerTblTableAdapter customerTblTableAdapter;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox namebox;
     }
 }

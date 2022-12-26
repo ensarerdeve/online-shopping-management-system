@@ -74,11 +74,12 @@ namespace online_shopping_management_system
                 }
                 else
                 {
+                    string Name = namebox.Text;
                     string Product = protext.Text;
                     string Amount = AmountTb.Text;
                     string Cost = CostTb.Text;
-                    string Query = "update ProductTbl set ShippmentTime = '{0}',Product = '{1}',Cost = '{2}',Amount = '{3}' where ProId = {4}";
-                    Query = string.Format(Query, DenemeTimeTb.Value.ToString("yyyy-MM-dd"), Product, Cost, Amount, Key);
+                    string Query = "update ProductTbl set ShippmentTime = '{0}',Product = '{1}',Cost = '{2}',Amount = '{3}',Name = '{4}'  where ProId = {5}";
+                    Query = string.Format(Query, DenemeTimeTb.Value.ToString("yyyy-MM-dd"), Product, Cost, Amount,Name, Key);
                     Con.SetData(Query);
                     ShowProduct();
                     MessageBox.Show("Shopping Details Updated!");
@@ -100,6 +101,7 @@ namespace online_shopping_management_system
             protext.Text = guna2DataGridView1.SelectedRows[0].Cells[2].Value.ToString();
             AmountTb.Text = guna2DataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             CostTb.Text = guna2DataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            namebox.Text = guna2DataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             if (AmountTb.Text == "")
             {
                 Key = 0;
@@ -120,11 +122,12 @@ namespace online_shopping_management_system
                 }
                 else
                 {
+                    string Name = namebox.Text;
                     string Product = protext.Text;
                     string Amount = AmountTb.Text;
                     string Cost = CostTb.Text;
-                    string Query = "insert into ProductTbl values('{0}','{1}','{2}','{3}')";
-                    Query = string.Format(Query, DenemeTimeTb.Value.ToString("yyyy-MM-dd"),Product,Cost,Amount, Key);
+                    string Query = "insert into ProductTbl values('{0}','{1}','{2}','{3}','{4}')";
+                    Query = string.Format(Query, DenemeTimeTb.Value.ToString("yyyy-MM-dd"),Product,Cost,Amount,Name, Key);
                     Con.SetData(Query);
                     ShowProduct();
                     MessageBox.Show("Shopping Details Added!");
@@ -142,15 +145,18 @@ namespace online_shopping_management_system
 
         private void Product_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'onlineShoppingDBDataSet.CustomerTbl' table. You can move, or remove it, as needed.
+            this.customerTblTableAdapter.Fill(this.onlineShoppingDBDataSet.CustomerTbl);
             try
             {
+
                 using (OnlineShoppingDBEntities db = new OnlineShoppingDBEntities())
                 {
                     ProductCB.DataSource = db.Product_List.ToList();
                     ProductCB.ValueMember = "Id";
                     ProductCB.DisplayMember = "Products";
-
                 }
+
             }
             catch (Exception ex)
             {
@@ -202,6 +208,12 @@ namespace online_shopping_management_system
         private void pricelabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            customerLISTFORM list = new customerLISTFORM();
+            list.Show();
         }
     }
 }
