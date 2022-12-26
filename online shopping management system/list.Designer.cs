@@ -92,7 +92,7 @@ namespace online_shopping_management_system
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(57, 30);
             this.label14.TabIndex = 43;
-            this.label14.Text = "$129";
+            this.label14.Text = "$120";
             // 
             // label13
             // 
@@ -103,7 +103,7 @@ namespace online_shopping_management_system
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(61, 30);
             this.label13.TabIndex = 42;
-            this.label13.Text = "$430";
+            this.label13.Text = "$450";
             // 
             // label12
             // 
@@ -112,9 +112,9 @@ namespace online_shopping_management_system
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(416, 387);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(56, 30);
+            this.label12.Size = new System.Drawing.Size(57, 30);
             this.label12.TabIndex = 41;
-            this.label12.Text = "$170";
+            this.label12.Text = "$150";
             // 
             // label11
             // 
@@ -136,7 +136,7 @@ namespace online_shopping_management_system
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(49, 30);
             this.label10.TabIndex = 39;
-            this.label10.Text = "$49";
+            this.label10.Text = "$50";
             // 
             // label9
             // 
@@ -147,7 +147,7 @@ namespace online_shopping_management_system
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 30);
             this.label9.TabIndex = 38;
-            this.label9.Text = "$249";
+            this.label9.Text = "$250";
             // 
             // label7
             // 
