@@ -162,7 +162,7 @@ namespace online_shopping_management_system
                     string Address = AddressTb.Text;
                     string Amount = GenderCb.SelectedItem.ToString();
                     string Product = ProTb.Text;
-                    string Query = "update CustomerTbl set CustomerName = '{0}',CustomerPhone = '{1}',CustomerAddress = '{2}',CustomerBirthday = '{3}',CustomerGender = '{4}',CustomerProduct = '{5}' where CustomerId = {6}";
+                    string Query = "update CustomerTbl set CustomerName = '{0}',CustomerPhone = '{1}',CustomerAddress = '{2}',CustomerBirthday = '{3}',CustomerAmount = '{4}',CustomerProduct = '{5}' where CustomerId = {6}";
                     Query = string.Format(Query, Name, Phone, Address, DenemeTimeTb.Value.ToString("yyyy-MM-dd"), Amount, Product, Key);
                     Con.SetData(Query);
                     ShowCustomers();
